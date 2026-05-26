@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yhteystiedot - Salon Radiokirppis</title>
+  <meta name="description" content="Ota yhteyttä Salon Radiokirppikseen. Varaa pöytä, kysy kysymyksiä tai anna palautetta. Puhelin, sähköposti ja osoite.">
+  <link rel="icon" href="images/favicon-150x150.png" sizes="32x32">
+  <link rel="icon" href="images/favicon.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="srk-nav" id="srk-nav" aria-label="Päävalikko">
+    <div class="srk-container">
+      <div class="srk-nav-inner">
+        <a class="srk-logo" href="index.html" aria-label="Siirry etusivulle" rel="home">
+          <picture>
+            <source type="image/webp" srcset="images/radiokirppis-logo-uusi1-scaled.png.webp">
+            <img src="images/radiokirppis-logo-uusi1-scaled.png" alt="Salon Radiokirppis" height="48">
+          </picture>
+        </a>
+        <ul class="srk-menu" role="list">
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="hinnat.html">Hinnat ja ohjeet</a></li>
+          <li><a href="kirppis.html">Kirppis ja kahvila</a></li>
+          <li><a href="yhteystiedot.html" class="active">Yhteystiedot</a></li>
+        </ul>
+        <a href="tel:+358440883381" class="srk-btn srk-btn-primary" style="font-size:0.9rem;padding:0.55rem 1.2rem;">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>
+          Varaa pöytä
+        </a>
+        <button class="srk-hamburger" id="srk-hamburger" aria-label="Avaa valikko" aria-expanded="false" aria-controls="srk-mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="srk-mobile-menu" id="srk-mobile-menu" aria-hidden="true">
+      <a href="index.html">Etusivu</a>
+      <a href="hinnat.html">Hinnat ja ohjeet</a>
+      <a href="kirppis.html">Kirppis ja kahvila</a>
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+      <a href="tel:+358440883381" class="srk-nav-cta">Soita ja varaa pöytä — 0440 883 381</a>
+    </div>
+  </nav>
+
+  <!-- ====== PAGE HERO ====== -->
+  <section class="srk-section srk-section-dark" style="padding-top:10rem;padding-bottom:4rem;" aria-label="Sivun otsikko">
+    <div class="srk-container">
+      <div class="srk-reveal">
+        <span class="srk-section-label">Ota yhteyttä</span>
+        <h1 style="margin-bottom:0.75rem;">Yhteystiedot</h1>
+        <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;max-width:560px;">
+          Varatkaa pöytä, kysy kysymyksiä tai tulkaa tervehtimään. Olemme mielellämme avuksi!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT INFO ====== -->
+  <section class="srk-section" aria-labelledby="contact-title">
+    <div class="srk-container">
+      <div class="srk-section-header srk-reveal">
+        <span class="srk-section-label">Tiedot</span>
+        <h2 id="contact-title">Tavoitat meidät helposti</h2>
+        <div class="srk-divider"></div>
+      </div>
+
+      <div class="srk-contact-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;">
+        <a href="tel:+358440883381" class="srk-contact-card srk-reveal" style="display:block;background:#fff;border:1px solid #eee;border-radius:16px;padding:2rem;text-align:center;text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;">
+          <div style="width:56px;height:56px;background:#FFED00;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 16 16" fill="#1A1A1A"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>
+          </div>
+          <div style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#666;margin-bottom:0.75rem;">Puhelin</div>
+          <div style="font-size:1.75rem;font-weight:900;color:#1A1A1A;">0440 883 381</div>
+        </a>
+
+        <a href="mailto:asiakaspalvelu@salonradiokirppis.fi" class="srk-contact-card srk-reveal" style="display:block;background:#fff;border:1px solid #eee;border-radius:16px;padding:2rem;text-align:center;text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;">
+          <div style="width:56px;height:56px;background:#FFED00;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 16 16" fill="#1A1A1A"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+          </div>
+          <div style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#666;margin-bottom:0.75rem;">Sähköposti</div>
+          <div style="font-size:1.1rem;font-weight:700;color:#1A1A1A;word-break:break-all;">asiakaspalvelu@<br>salonradiokirppis.fi</div>
+        </a>
+
+        <div class="srk-contact-card srk-reveal" style="background:#fff;border:1px solid #eee;border-radius:16px;padding:2rem;text-align:center;">
+          <div style="width:56px;height:56px;background:#FFED00;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg width="24" height="24" viewBox="0 0 16 16" fill="#1A1A1A"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></svg>
+          </div>
+          <div style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#666;margin-bottom:0.75rem;">Osoite</div>
+          <div style="font-size:1.35rem;font-weight:900;color:#1A1A1A;">Helsingintie 22</div>
+          <div style="font-size:1rem;color:#666;margin-top:0.25rem;">Salo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== OPENING HOURS ====== -->
+  <section class="srk-section srk-section-alt" aria-labelledby="hours-title">
+    <div class="srk-container">
+      <div class="srk-section-header srk-reveal">
+        <span class="srk-section-label">Aukioloajat</span>
+        <h2 id="hours-title">Milloin olemme avoinna</h2>
+        <div class="srk-divider"></div>
+      </div>
+
+      <div style="max-width:500px;margin:0 auto;background:#fff;border-radius:16px;padding:2rem;box-shadow:0 2px 16px rgba(0,0,0,0.05);" class="srk-reveal">
+        <div style="display:grid;gap:1rem;">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:1rem;border-bottom:1px solid #f0f0f0;">
+            <span style="font-weight:600;color:#333;">Maanantai – Perjantai</span>
+            <span style="font-weight:900;color:#1A1A1A;font-size:1.1rem;">10:00 – 17:00</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:1rem;border-bottom:1px solid #f0f0f0;">
+            <span style="font-weight:600;color:#333;">Lauantai</span>
+            <span style="font-weight:900;color:#1A1A1A;font-size:1.1rem;">10:00 – 15:00</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:1rem;border-bottom:1px solid #f0f0f0;">
+            <span style="font-weight:600;color:#333;">Sunnuntai</span>
+            <span style="font-weight:900;color:#1A1A1A;font-size:1.1rem;">10:00 – 15:00</span>
+          </div>
+        </div>
+        <p style="margin:1.25rem 0 0;font-size:0.88rem;color:#777;text-align:center;">
+          Heinäkuun sunnuntait suljettu
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MAP ====== -->
+  <section class="srk-section" aria-labelledby="map-title">
+    <div class="srk-container">
+      <div class="srk-section-header srk-reveal">
+        <span class="srk-section-label">Sijainti</span>
+        <h2 id="map-title">Löydä meidät</h2>
+        <div class="srk-divider"></div>
+      </div>
+
+      <div class="srk-reveal" style="border-radius:16px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.12);">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.77!2d23.13!3d60.39!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDIzJzI0LjAiTiAyM8KwMDcnNDguMCJF!5e0!3m2!1sfi!2sfi!4v1"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Salon Radiokirppiksen sijainti kartalla">
+        </iframe>
+      </div>
+
+      <div style="text-align:center;margin-top:2rem;" class="srk-reveal">
+        <a href="https://www.google.com/maps/search/?api=1&query=Helsingintie+22+Salo+Finland" target="_blank" rel="noopener" class="srk-btn srk-btn-outline">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></svg>
+          Avaa Google Mapsissa
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="srk-cta-strip" aria-label="Varaa pöytä">
+    <div class="srk-container">
+      <div class="srk-cta-inner">
+        <div class="srk-cta-text srk-reveal">
+          <h2>Varaa pöytä heti</h2>
+          <p>Soita tai lähetä viesti — autamme mielellämme!</p>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;" class="srk-reveal">
+          <a href="tel:+358440883381" class="srk-btn srk-btn-primary">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>
+            0440 883 381
+          </a>
+          <a href="mailto:asiakaspalvelu@salonradiokirppis.fi" class="srk-btn srk-btn-outline">
+            Lähetä sähköpostia
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="srk-footer" aria-label="Sivun alatunniste">
+    <div class="srk-container">
+      <div class="srk-footer-grid">
+        <div class="srk-footer-brand">
+          <picture>
+            <source type="image/webp" srcset="images/radiokirppis-logo-uusi1-scaled.png.webp">
+            <img src="images/radiokirppis-logo-uusi1-scaled.png" alt="Salon Radiokirppis" height="44">
+          </picture>
+          <p>Palveleva koko perheen itsepalvelukirpputori Salon sydämessä, jo vuodesta 2009.</p>
+          <div class="srk-social-links">
+            <a href="https://www.facebook.com/salonradiokirppis/" class="srk-social-link" aria-label="Facebook">
+              <svg viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+            </a>
+            <a href="https://www.instagram.com/radiokirppissalo/" class="srk-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="srk-footer-col">
+          <h4>Varaa pöytä</h4>
+          <a href="tel:+358440883381">0440 883 381</a>
+          <a href="mailto:asiakaspalvelu@salonradiokirppis.fi">asiakaspalvelu@salonradiokirppis.fi</a>
+        </div>
+        <div class="srk-footer-col">
+          <h4>Aukioloajat</h4>
+          <p>Ma–Pe 10–17</p>
+          <p>La 10–15</p>
+          <p>Su 10–15</p>
+        </div>
+      </div>
+      <div class="srk-footer-bottom">
+        <p>&copy; 2025 Salon Radiokirppis. Helsingintie 22, Salo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('srk-nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+    const hamburger = document.getElementById('srk-hamburger');
+    const mobileMenu = document.getElementById('srk-mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      mobileMenu.setAttribute('aria-hidden', String(!open));
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.srk-reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
