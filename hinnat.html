@@ -12,6 +12,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
+  <style>
+    @media (max-width: 768px) {
+      .srk-guide-row {
+        grid-template-columns: 1fr !important;
+      }
+      .srk-guide-row-alt {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -62,6 +72,18 @@
     </div>
   </section>
 
+  <!-- ====== HERO IMAGE ====== -->
+  <section style="padding:0;">
+    <picture style="display:block;width:100%;">
+      <source type="image/webp" srcset="images/salon-radiokirppis-2-2048x1366.jpg.webp">
+      <img
+        src="images/salon-radiokirppis-2-2048x1366.jpg"
+        alt="Salon Radiokirppis sisätila"
+        style="width:100%;max-height:400px;object-fit:cover;"
+        loading="lazy">
+    </picture>
+  </section>
+
   <!-- ====== PRICES ====== -->
   <section class="srk-section" aria-labelledby="prices-title">
     <div class="srk-container">
@@ -78,15 +100,6 @@
           <div style="font-size:2.5rem;font-weight:900;color:#1A1A1A;margin-bottom:0.25rem;">75€/2 viikkoa</div>
         </div>
       </div>
-
-      <picture class="srk-reveal" style="display:block;max-width:800px;margin:0 auto 3rem;">
-        <source type="image/webp" srcset="images/salon-radiokirppis-2-1024x683.jpg.webp">
-        <img
-          src="images/salon-radiokirppis-2-1024x683.jpg"
-          alt="Salon Radiokirppis sisätila"
-          style="border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,0.12);width:100%;"
-          loading="lazy">
-      </picture>
     </div>
   </section>
 
@@ -98,40 +111,85 @@
         <div class="srk-divider"></div>
       </div>
 
-      <div class="srk-guide-content" style="max-width:800px;margin:0 auto;">
-        <div class="srk-reveal" style="background:#fff;border-radius:12px;padding:2rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
-          <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Vuokra-aika</h3>
-          <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
-            Vuokra-aika voi alkaa mistä päivästä tahansa ja se on lyhimmillään 7 päivää. Kiinniolopäiviä esim, juhlapyhiä ei lasketa vuokra-aikaan. Tavarat voi tuoda aloituspäivänä heti avattuamme (tai sovitusti edeltävän päivän iltana ennen sulkemista) ja päättymispäivänä pöytä tulisi tyhjentää n. tuntia ennen sulkemista. Mikäli et tyhjennä pöytääsi sovitusti, veloitetaan 10€ tyhjennysmaksu. Muista ilmoittaa vuokra-ajan jatkamisesta tai lopettamisesta VIIMEISTÄÄN 2 pvää ennen vuokra-ajan päättymistä.
-          </p>
+      <div class="srk-guide-content" style="max-width:1100px;margin:0 auto;">
+        <!-- Vuokra-aika -->
+        <div class="srk-reveal srk-guide-row" style="display:grid;grid-template-columns:1fr 300px;gap:2rem;align-items:start;margin-bottom:2.5rem;">
+          <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+            <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Vuokra-aika</h3>
+            <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
+              Vuokra-aika voi alkaa mistä päivästä tahansa ja se on lyhimmillään 7 päivää. Kiinniolopäiviä esim, juhlapyhiä ei lasketa vuokra-aikaan. Tavarat voi tuoda aloituspäivänä heti avattuamme (tai sovitusti edeltävän päivän iltana ennen sulkemista) ja päättymispäivänä pöytä tulisi tyhjentää n. tuntia ennen sulkemista. Mikäli et tyhjennä pöytääsi sovitusti, veloitetaan 10€ tyhjennysmaksu. Muista ilmoittaa vuokra-ajan jatkamisesta tai lopettamisesta VIIMEISTÄÄN 2 pvää ennen vuokra-ajan päättymistä.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/salon-radiokirppis-2-300x200.jpg.webp">
+              <img src="images/salon-radiokirppis-2-300x200.jpg" alt="Kirppis" style="border-radius:12px;width:100%;">
+            </picture>
+          </div>
         </div>
 
-        <div class="srk-reveal" style="background:#fff;border-radius:12px;padding:2rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
-          <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Hinnoittelu</h3>
-          <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
-            Tulostamme käyttöösi viivakoodin sisältävät hintalapputarrat, maksutta 66 kpl eli 2 arkkia, seuraavat arkit (33kpl/arkki) 1€/kpl. Hintalapputarrassa on valmiina pöytänumero sekä viivakoodina, että numerona, itse kirjoitat vain kuvauksen tuotteesta ja hinnan. Mietithän tarkasti paikan, johon hintalapun sijoitat, varsinkin keräilytuotteissa, sillä tarra saattaa jäädä kiinni hyvinkin tiukasti. Vaatteisiin hintalaput kannattaa kiinnittää nuppineulojen/hakaneulojen avulla, ettei hintalappu irtoa. Nuppi- ja hakaneuloja saat lainaksi kassalta.
-          </p>
+        <!-- Hinnoittelu -->
+        <div class="srk-reveal srk-guide-row-alt" style="display:grid;grid-template-columns:300px 1fr;gap:2rem;align-items:start;margin-bottom:2.5rem;">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/poytakartta-e1755584341180-300x181.jpg.webp">
+              <img src="images/poytakartta-e1755584341180-300x181.jpg" alt="Pöytäkartta" style="border-radius:12px;width:100%;">
+            </picture>
+          </div>
+          <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+            <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Hinnoittelu</h3>
+            <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
+              Tulostamme käyttöösi viivakoodin sisältävät hintalapputarrat, maksutta 66 kpl eli 2 arkkia, seuraavat arkit (33kpl/arkki) 1€/kpl. Hintalapputarrassa on valmiina pöytänumero sekä viivakoodina, että numerona, itse kirjoitat vain kuvauksen tuotteesta ja hinnan. Mietithän tarkasti paikan, johon hintalapun sijoitat, varsinkin keräilytuotteissa, sillä tarra saattaa jäädä kiinni hyvinkin tiukasti. Vaatteisiin hintalaput kannattaa kiinnittää nuppineulojen/hakaneulojen avulla, ettei hintalappu irtoa. Nuppi- ja hakaneuloja saat lainaksi kassalta.
+            </p>
+          </div>
         </div>
 
-        <div class="srk-reveal" style="background:#fff;border-radius:12px;padding:2rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
-          <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Vastuu tavaroiden katoamisesta</h3>
-          <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
-            Radiokirppis ei korvaa kadonneita, varastettuja eikä vaurioituneita tuotteita. Pienet, helposti särkyvät ja arvokkaat tavarat (esim. korut, kellot, hajuvedet yms.) voi tuoda myyntiin lukolliseen lasivitriiniin 0,50€/tuote/vuokra-aika. CD- ja DVD-levyistä ja peleistä voi tuoda sisällön kassalle. Muihin arvokkaampiin tuotteisiin voi vuokrata varashälyttimen 0,25€/kpl tai 1€/5kpl (nappi-, vaijeri- tai tarrahälytin). Emme myy: tupakkatuotteita, aikuisviihdettä, autonrenkaita ja teräaseita. Suosittelemme kiertämistä kirppiksellä vuokra-aikana, sillä tavaroita ja vaatteita kulkeutuu asiakkaiden käsissä muihin pöytiin. Henkilökuntamme vie niitä paikoilleen niin paljon kuin mahdollista, mutta kannattaa myös itse olla aktiivinen. Tuotteet joita et halua viedä kotiin vuokra-aikasi loputtua, voit jättää halpispöytäämme, jonka tuotto menee mm. Joulu Salon lapsille -keräykseen ja Salon Seudun eläinsuojeluyhdistyksen kautta järjestettäviin joulukeräyksiin.
-          </p>
+        <!-- Vastuu tavaroiden katoamisesta -->
+        <div class="srk-reveal srk-guide-row" style="display:grid;grid-template-columns:1fr 300px;gap:2rem;align-items:start;margin-bottom:2.5rem;">
+          <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+            <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Vastuu tavaroiden katoamisesta</h3>
+            <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
+              Radiokirppis ei korvaa kadonneita, varastettuja eikä vaurioituneita tuotteita. Pienet, helposti särkyvät ja arvokkaat tavarat (esim. korut, kellot, hajuvedet yms.) voi tuoda myyntiin lukolliseen lasivitriiniin 0,50€/tuote/vuokra-aika. CD- ja DVD-levyistä ja peleistä voi tuoda sisällön kassalle. Muihin arvokkaampiin tuotteisiin voi vuokrata varashälyttimen 0,25€/kpl tai 1€/5kpl (nappi-, vaijeri- tai tarrahälytin). Emme myy: tupakkatuotteita, aikuisviihdettä, autonrenkaita ja teräaseita. Suosittelemme kiertämistä kirppiksellä vuokra-aikana, sillä tavaroita ja vaatteita kulkeutuu asiakkaiden käsissä muihin pöytiin. Henkilökuntamme vie niitä paikoilleen niin paljon kuin mahdollista, mutta kannattaa myös itse olla aktiivinen. Tuotteet joita et halua viedä kotiin vuokra-aikasi loputtua, voit jättää halpispöytäämme, jonka tuotto menee mm. Joulu Salon lapsille -keräykseen ja Salon Seudun eläinsuojeluyhdistyksen kautta järjestettäviin joulukeräyksiin.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/salon-radiokirppis-2-768x512.jpg.webp">
+              <img src="images/salon-radiokirppis-2-768x512.jpg" alt="Kirppis sisätila" style="border-radius:12px;width:100%;">
+            </picture>
+          </div>
         </div>
 
-        <div class="srk-reveal" style="background:#fff;border-radius:12px;padding:2rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
-          <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Rahojen tilitys</h3>
-          <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
-            Tilitämme myynnistä tulleet rahat käteisellä tai varsinkin suuremmat tilitykset pankkisiirtona, jolloin rahat näkyvät tililläsi muutamassa päivässä. Rahatilitys on aina reaaliaikainen. Tilityksen edellytyksenä on, että käynnissä oleva vuokrajakso on maksettu. Tarkista tilitys heti, niin voimme korjata mahdolliset virheet. Myöhemmin ilmaantuneita epäselvyyksiä emme korvaa. Toivotamme hyviä myyntejä!
-          </p>
+        <!-- Rahojen tilitys -->
+        <div class="srk-reveal srk-guide-row-alt" style="display:grid;grid-template-columns:300px 1fr;gap:2rem;align-items:start;margin-bottom:2.5rem;">
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/salon-radiokirppis-2-1024x683.jpg.webp">
+              <img src="images/salon-radiokirppis-2-1024x683.jpg" alt="Kirppis" style="border-radius:12px;width:100%;">
+            </picture>
+          </div>
+          <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+            <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Rahojen tilitys</h3>
+            <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
+              Tilitämme myynnistä tulleet rahat käteisellä tai varsinkin suuremmat tilitykset pankkisiirtona, jolloin rahat näkyvät tililläsi muutamassa päivässä. Rahatilitys on aina reaaliaikainen. Tilityksen edellytyksenä on, että käynnissä oleva vuokrajakso on maksettu. Tarkista tilitys heti, niin voimme korjata mahdolliset virheet. Myöhemmin ilmaantuneita epäselvyyksiä emme korvaa. Tohotamme hyviä myyntejä!
+            </p>
+          </div>
         </div>
 
-        <div class="srk-reveal" style="background:#fff;border-radius:12px;padding:2rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
-          <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Lisäpalvelut</h3>
-          <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
-            Pöydän siivouspalvelusta voit kysyä lisää kassalta Pöytään on mahdollista ottaa myös sivunumero, jolloin voit tulla myymään yhdessä ystävän kanssa ilman lisämaksua! Helppoa ja kivaa kun voitte puolittaa vuokran ja jakaa pöydänsiivous vuorot.
-          </p>
+        <!-- Lisäpalvelut -->
+        <div class="srk-reveal srk-guide-row" style="display:grid;grid-template-columns:1fr 300px;gap:2rem;align-items:start;margin-bottom:2.5rem;">
+          <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+            <h3 style="font-size:1.2rem;margin-bottom:1rem;color:#1A1A1A;">Lisäpalvelut</h3>
+            <p style="color:#555;font-size:1rem;line-height:1.8;margin:0;">
+              Pöydän siivouspalvelusta voit kysyä lisää kassalta Pöytään on mahdollista ottaa myös sivunumero, jolloin voit tulla myymään yhdessä ystävän kanssa ilman lisämaksua! Helppoa ja kivaa kun voite puolittaa vuokran ja jakaa pöydänsiivous vuorot.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/salon-radiokirppis-2-1536x1025.jpg.webp">
+              <img src="images/salon-radiokirppis-2-1536x1025.jpg" alt="Kirppis" style="border-radius:12px;width:100%;">
+            </picture>
+          </div>
         </div>
       </div>
     </div>
@@ -167,7 +225,7 @@
             <source type="image/webp" srcset="images/radiokirppis-logo-uusi1-scaled.png.webp">
             <img src="images/radiokirppis-logo-uusi1-scaled.png" alt="Salon Radiokirppis" height="44">
           </picture>
-          <p>Salon Radiokirppis on palveleva koko perheen itsepalvelukirpputori Salon sydämessä, jo vuodesta 2009.</p>
+          <p>Salon Radiokirppis on palveleva koko perheen itsepalvelukirpputori Salon sydämessä, jo vuodesta 2009!</p>
           <div class="srk-social-links">
             <a href="https://www.facebook.com/salonradiokirppis/" class="srk-social-link" aria-label="Facebook">
               <svg viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
