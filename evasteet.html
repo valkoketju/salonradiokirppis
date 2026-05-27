@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evästeseloste - Salon Radiokirppis</title>
+  <meta name="description" content="Salon Radiokirppiksen evästeseloste ja tietoa evästeistä.">
+  <link rel="icon" href="images/favicon-150x150.png" sizes="32x32">
+  <link rel="icon" href="images/favicon.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+    .evaste-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    .evaste-table th, .evaste-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid #eee; }
+    .evaste-table th { background: #f8f8f8; font-weight: 600; }
+    .evaste-table td { font-size: 0.9rem; color: #555; }
+    @media (max-width: 600px) {
+      .evaste-table { font-size: 0.8rem; }
+      .evaste-table th, .evaste-table td { padding: 0.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="srk-nav" id="srk-nav" aria-label="Päävalikko">
+    <div class="srk-container">
+      <div class="srk-nav-inner">
+        <a class="srk-logo" href="index.html" aria-label="Siirry etusivulle" rel="home">
+          <picture>
+            <source type="image/webp" srcset="images/radiokirppis-logo-uusi1-scaled.png.webp">
+            <img src="images/radiokirppis-logo-uusi1-scaled.png" alt="Salon Radiokirppis" height="48">
+          </picture>
+        </a>
+        <ul class="srk-menu" role="list">
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="hinnat.html">Hinnat ja ohjeet</a></li>
+          <li><a href="kirppis.html">Kirppis ja kahvila</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+        <a href="tel:+358440883381" class="srk-btn srk-btn-primary" style="font-size:0.9rem;padding:0.55rem 1.2rem;">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>
+          Varaa pöytä
+        </a>
+        <button class="srk-hamburger" id="srk-hamburger" aria-label="Avaa valikko" aria-expanded="false" aria-controls="srk-mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="srk-mobile-menu" id="srk-mobile-menu" aria-hidden="true">
+      <a href="index.html">Etusivu</a>
+      <a href="hinnat.html">Hinnat ja ohjeet</a>
+      <a href="kirppis.html">Kirppis ja kahvila</a>
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+      <a href="tel:+358440883381" class="srk-nav-cta">Soita ja varaa pöytä — 0440 883 381</a>
+    </div>
+  </nav>
+
+  <!-- ====== PAGE HERO ====== -->
+  <section class="srk-section srk-section-dark" style="padding-top:10rem;padding-bottom:4rem;" aria-label="Sivun otsikko">
+    <div class="srk-container">
+      <div class="srk-reveal">
+        <h1 style="margin-bottom:0.5rem;">Evästeseloste</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTENT ====== -->
+  <section class="srk-section">
+    <div class="srk-container">
+      <div class="srk-reveal" style="max-width:900px;margin:0 auto;">
+
+        <p style="color:#555;line-height:1.8;margin-bottom:2rem;">
+          Tämä sivusto käyttää evästeitä. Käytämme evästeitä tarjoamamme sisällön ja mainosten räätälöimiseen, sosiaalisen median ominaisuuksien tukemiseen ja kävijämäärämme analysoimiseen. Lisäksi jaamme sosiaalisen median, mainosalan ja analytiikka-alan kumppaneillemme tietoja siitä, miten käytät sivustoamme. Kumppanimme voivat yhdistää näitä tietoja muihin tietoihin, joita olet antanut heille tai joita on kerätty, kun olet käyttänyt heidän palvelujaan.
+        </p>
+
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:1.2rem;margin-bottom:1rem;">Evästeet</h2>
+          <p style="color:#555;line-height:1.8;margin-bottom:1rem;"><strong>Mitä ovat evästeet?</strong> Eväste (cookie) on pieni tekstitiedosto, jonka internet-selain tallentaa käyttäjän laitteelle. Evästeitä käytetään esimerkiksi silloin, kun käyttäjän tietoja halutaan säilyttää tämän siirtyessä internetpalvelun sivulta toiselle.</p>
+          <p style="color:#555;line-height:1.8;margin-bottom:1rem;">Sivuillamme käytetyt evästeet keräävät ainoastaan pseudonymisoituja henkilötietoja, joka tarkoittaa sitä, ettei niitä pysty yhdistämään yksittäiseen henkilöön ilman lisätietoja.</p>
+        </div>
+
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:1.2rem;margin-bottom:1rem;">Mihin evästeitä käytetään?</h2>
+          <p style="color:#555;line-height:1.8;margin-bottom:1rem;">Keräämme tietoa verkkosivustomme käyttötavoista voidaksemme tarjota käyttäjille paremman käyttökokemuksen sekä kehittääksemme sivuston toimivuutta. Keräämme evästeitä myös markkinoinnin ja asiakaspalvelun parantamiseksi. Hyödynnämme evästeitä ainoastaan omaan käyttöömme.</p>
+        </div>
+
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:1.2rem;margin-bottom:1rem;">Evästeiden hyväksyminen</h2>
+          <p style="color:#555;line-height:1.8;margin-bottom:0.5rem;">Hyväksymällä evästeet voimme:</p>
+          <ul style="color:#555;line-height:1.8;padding-left:1.5rem;margin-bottom:1rem;">
+            <li>Kerätä tietoa verkkosivuston käytöstä.</li>
+            <li>Tallentaa tietoa, millä selaimella ja laitteella verkkosivuillamme vieraillaan.</li>
+            <li>Kohdentaa verkkosivujen sisältöä aikaisempien vierailujen pohjalta keräämiemme tietojen perusteella.</li>
+          </ul>
+          <p style="color:#555;line-height:1.8;">Evästeitä voidaan käyttää myös käyttäjän kiinnostusten kohteiden perusteella kohdennetun, tuotteisiimme ja palveluihimme liittyvän mainonnan tuottamiseen muilla verkkosivuilla Internetissä.</p>
+        </div>
+
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:1.2rem;margin-bottom:1rem;">Evästetiedot</h2>
+          <p style="color:#555;line-height:1.8;margin-bottom:0.5rem;">Lupasi koskee seuraavia toimialueita: salonradiokirppis.fi</p>
+          <p style="color:#555;line-height:1.8;margin-bottom:0.5rem;">Nykyinen tila: Salli kaikki.</p>
+          <p style="color:#555;line-height:1.8;margin-bottom:0.5rem;">Hyväksymistunnuksesi: oYWI5zcI4vyIsbQhy0jgmZPlND9iepSJHUt2PVqdraBgHDd3e+2BVg==</p>
+          <p style="color:#555;line-height:1.8;">Hyväksymispäivämäärä: maanantaina 25. toukokuuta 2026 klo 16.28.38 UTC+3</p>
+        </div>
+
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:1.2rem;margin-bottom:1rem;">Välttämätön (6)</h2>
+          <p style="color:#555;line-height:1.8;margin-bottom:1rem;">Välttämättömät evästeet auttavat tekemään verkkosivustosta käyttökelpoisen sallimalla perustoimintoja kuten sivulla siirtymisen ja sivuston suojattujen alueiden käytön. Verkkosivusto ei toimi kunnolla ilman näitä evästeitä.</p>
+
+          <table class="evaste-table">
+            <thead>
+              <tr>
+                <th>Nimi</th>
+                <th>Tarjoaja</th>
+                <th>Tarkoitus</th>
+                <th>Säilytyksen enimmäiskesto</th>
+                <th>Tyyppi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CookieConsent</td>
+                <td>Cookiebot</td>
+                <td>Tallentaa käyttäjän evästeiden suostumustilan nykyiselle verkkotunnukselle</td>
+                <td>1 vuosi</td>
+                <td>HTTP-eväste</td>
+              </tr>
+              <tr>
+                <td>rc::a</td>
+                <td>Google</td>
+                <td>This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.</td>
+                <td>Pysyvä</td>
+                <td>HTML Local Storage</td>
+              </tr>
+              <tr>
+                <td>rc::c</td>
+                <td>Google</td>
+                <td>This cookie is used to distinguish between humans and bots.</td>
+                <td>Istunto</td>
+                <td>HTML Local Storage</td>
+              </tr>
+              <tr>
+                <td>test_cookie</td>
+                <td>Google</td>
+                <td>Used to check if the user's browser supports cookies.</td>
+                <td>1 päivä</td>
+                <td>HTTP-eväste</td>
+              </tr>
+              <tr>
+                <td>what-intent</td>
+                <td>salonradiokirppis.fi</td>
+                <td>Determines the device used to access the website. This allows the website to be formatted accordingly.</td>
+                <td>Istunto</td>
+                <td>HTML Local Storage</td>
+              </tr>
+              <tr>
+                <td>wpEmojiSettingsSupports</td>
+                <td>salonradiokirppis.fi</td>
+                <td>This cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.</td>
+                <td>Istunto</td>
+                <td>HTML Local Storage</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:1.2rem;margin-bottom:1rem;">Markkinointi (3)</h2>
+          <p style="color:#555;line-height:1.8;margin-bottom:1rem;">Markkinointievästeitä käytetään verkkosivustoilla kävijöiden seurantaan. Tarkoituksena on näyttää mainoksia, jotka ovat sopivat ja kiinnostavia yksittäisille käyttäjille, ja siten arvokkaampia julkaisijoille ja kolmansien osapuolten mainostajille.</p>
+
+          <table class="evaste-table">
+            <thead>
+              <tr>
+                <th>Nimi</th>
+                <th>Tarjoaja</th>
+                <th>Tarkoitus</th>
+                <th>Säilytyksen enimmäiskesto</th>
+                <th>Tyyppi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>_gcl_au</td>
+                <td>Google</td>
+                <td>Used to measure the efficiency of the website's advertisement efforts, by collecting data on the conversion rate of the website's ads across multiple websites.</td>
+                <td>3 kuukautta</td>
+                <td>HTTP-eväste</td>
+              </tr>
+              <tr>
+                <td>_gcl_ls</td>
+                <td>Google</td>
+                <td>Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website.</td>
+                <td>Pysyvä</td>
+                <td>HTML Local Storage</td>
+              </tr>
+              <tr>
+                <td>pagead/1p-user-list/#</td>
+                <td>Google</td>
+                <td>Tracks if the user has shown interest in specific products or events across multiple websites and detects how the user navigates between sites. This is used for measurement of advertisement efforts and facilitates payment of referral-fees between websites.</td>
+                <td>Istunto</td>
+                <td>Seurantapikseli</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="color:#777;font-size:0.85rem;line-height:1.6;">
+          Evästeilmoitus päivitetty viimeksi 12.5.2026, tekijä: Cookiebot
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="srk-footer" aria-label="Sivun alatunniste">
+    <div class="srk-container">
+      <div class="srk-footer-grid">
+        <div class="srk-footer-brand">
+          <picture>
+            <source type="image/webp" srcset="images/radiokirppis-logo-uusi1-scaled.png.webp">
+            <img src="images/radiokirppis-logo-uusi1-scaled.png" alt="Salon Radiokirppis" height="44">
+          </picture>
+          <p>Salon Radiokirppis on palveleva koko perheen itsepalvelukirpputori Salon sydämessä, jo vuodesta 2009!</p>
+        </div>
+        <div class="srk-footer-col">
+          <h4>Varaa pöytä</h4>
+          <a href="tel:+358440883381">0440 883 381</a>
+          <a href="mailto:asiakaspalvelu@salonradiokirppis.fi">asiakaspalvelu@salonradiokirppis.fi</a>
+        </div>
+        <div class="srk-footer-col">
+          <h4>Aukioloajat</h4>
+          <p>Ma-Pe 10-17</p>
+          <p>La 10-15</p>
+          <p>Su 10-15</p>
+        </div>
+      </div>
+      <div class="srk-footer-bottom">
+        <p>&copy; 2025 Salon Radiokirppis. Helsingintie 22, Salo.</p>
+        <div class="srk-footer-links">
+          <a href="tietosuoja.html">Tietosuojaseloste</a>
+          <a href="evasteet.html">Evästeseloste</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('srk-nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+    const hamburger = document.getElementById('srk-hamburger');
+    const mobileMenu = document.getElementById('srk-mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      mobileMenu.setAttribute('aria-hidden', String(!open));
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      });
+    });
+  </script>
+
+</body>
+</html>
