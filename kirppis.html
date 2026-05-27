@@ -52,16 +52,25 @@
     </div>
   </nav>
 
-  <!-- ====== PAGE HERO ====== -->
-  <section class="srk-section srk-section-dark" style="padding-top:10rem;padding-bottom:4rem;" aria-label="Sivun otsikko">
-    <div class="srk-container">
-      <div class="srk-reveal">
-        <span class="srk-section-label">Tervetuloa</span>
-        <h1 style="margin-bottom:0.75rem;">Kirppis ja kahvila</h1>
-        <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;max-width:560px;">
-          Kirpputori ja kahvila saman katon alla.
-        </p>
-      </div>
+  <!-- ====== PAGE HERO WITH BACKGROUND ====== -->
+  <section class="srk-hero" aria-label="Sivun otsikko" style="min-height:50vh;">
+    <div class="srk-hero-bg">
+      <picture>
+        <source type="image/webp" srcset="images/salon-radiokirppis-2-1536x1025.jpg.webp">
+        <img
+          src="images/salon-radiokirppis-2-1536x1025.jpg"
+          alt="Salon Radiokirppis"
+          style="width:100%;height:100%;object-fit:cover;"
+          loading="eager">
+      </picture>
+    </div>
+    <div class="srk-hero-overlay"></div>
+    <div class="srk-container srk-hero-content">
+      <span class="srk-hero-badge">Tervetuloa</span>
+      <h1 class="srk-hero-title">Kirppis ja kahvila</h1>
+      <p class="srk-hero-sub" style="font-size:clamp(1.1rem, 2.5vw, 1.4rem);max-width:500px;">
+        Kirpputori ja kahvila saman katon alla.
+      </p>
     </div>
   </section>
 
